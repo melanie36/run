@@ -1,20 +1,33 @@
 ﻿<!DOCTYPE html>
 
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>비디오 재생하기</title>
     <style>
         body {
-            margin-top:20px;
-            margin-left:50px;
+            margin-top: 20px;
+            margin-left: 50px;
         }
+        #beach{width:200px; height:150px;}
+        .beach{width:200px; height:150px;}
     </style>
 </head>
+
 <body>
-    <h2>페인팅 동영상. Painting.mp4</h2>
+    <h2>inline 스타일 방식(태그의 style 속성 사용)</h2>
+    <video src="../media/Painting.mp4" controls style="width: 200px;"></video>
+
     <hr>
-    
-    <h2>해변 동영상. Beach.mp4. 너비는 200px, 높이는 150px</h2>
+
+    <h2>태그의 width, height 속성 사용</h2>
+    <video src="../media/Beach.mp4" controls width="200px" height="150px"></video>
+
+    <hr>
+    <h2>내부 스타일 방식 (style 태그사용, id속성, class속성을 사용)</h2>
+    <video src="../media/Beach.mp4" controls id="beach"></video>
+    <video src="../media/Beach.mp4" controls class="beach"></video>
 </body>
+
 </html>
