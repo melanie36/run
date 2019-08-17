@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-    *{margin:0;padding:0;}
-    h1,h2,h3,h4,h5,p{margin:10px;background-color:seagreen;}
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 10px;
+            background-color: seagreen;
+        }
+
+        p.specials {
+            color: blue;
+        }
+
+        p#footer{color: chartreuse}
     </style>
 
 </head>
+
 <body>
     <h1>제목글씨</h1>
     <h2>제목글씨</h2>
     <h3>제목글씨</h3>
     <h4>제목글씨</h4>
     <h5>제목글씨</h5>
-    <p>제목글씨</p>
+    <p>단락</p>
 
+    <hr>
+
+    <p class="specials">
+        p.specials를 태그로 완성하시오
+    </p>
+
+    <div class="specials">
+        p.specials를 태그로 완성하시오
+
+        <p id="footer">p#footer를 태그로 완성하시오</p>
+
+
+    </div>
 </body>
+
 </html>
