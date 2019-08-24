@@ -5,17 +5,46 @@
     <meta charset="utf-8">
     <title>둥근 검색 바 만들기</title>
     <style>
-   
-            input.input-search {text-indent: 20px;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        input:focus {
+            outline: 0px;
+        }
+
+        input.input-search {
+            text-indent: 20px;
+            border: 2px solid lightgray;
             border-top-left-radius: 50px;
+            border-right: 0;
             border-bottom-left-radius: 50px;
+            height: 46px;
+            float: left;
+            width: 300px;
         }
 
         input.input-search-submit {
+            border: 2px solid lightgray;
             border-top-right-radius: 50px;
             border-bottom-right-radius: 50px;
+            height: 50px;
+            float: left;
+            width: 120px;
+            font-size: 30px;
+            font-weight: 500;
+            margin-right: 20px;
         }
 
+        input.input-search-submit:hover {
+            box-shadow: +5px +5px 5px gray;
+        }
+
+        input.input-search-submit:active {
+            background-color: green;
+            color: white;
+        }
     </style>
 </head>
 

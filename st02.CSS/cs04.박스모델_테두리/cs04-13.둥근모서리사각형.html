@@ -1,9 +1,32 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>border radius</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div#borderradius>div[class] {
+            margin: 20px;
+            width: 200px;
+            height: 100px;
+            background-color: white;
+            border: 3px solid black;
+        }
+
+        div.box1{border-radius:10px;}
+        div.box2{border-radius:10px 20px;}
+        div.box3{border-radius:10px 20px 40px 60px ;}
+        div.box4{border-radius:10px 40px 80px 120px ;}
+        div.box5{border-radius:10px 20px ;}
+
+    </style>
 </head>
+
 <body>
     <div id="borderradius">
         <h2>border radius</h2>
@@ -14,4 +37,5 @@
         <div class="box5"> </div>
     </div>
 </body>
-</html>
+
+</html>
