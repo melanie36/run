@@ -25,7 +25,7 @@
         }
 
         div#size {
-            clear: both;
+            clear: both; 
         }
 
         div#color {
@@ -77,14 +77,20 @@
         div#position>div.bg2{background-image:url(../images/bg2.jpg);background-position:center;}
         div#position>div.bg3{background-image:url(../images/bg2.jpg);background-position:bottom;}
        
+
+
         div#size>div {background-image:url(../images/bg4.jpg);background-repeat: no-repeat;float: left;width:300px;height:300px;}
+        
+        div#size {
+            background-repeat: no-repeat; background-color: white;
+        }
         div#size>div.bg1 {background-size:auto;}
         div#size>div.bg2 {background-size:200px 150px;}
         div#size>div.bg3 {background-size:60% 40%;}
         div#size>div.bg4 {background-size:contain;}
         div#size>div.bg5 {background-size:cover;}
         div#size>div.bg6 {background-size:100% 100%;}
-    
+        div#size::after{clear: both;display: block;content:'';}
      
     
     
@@ -212,6 +218,8 @@
         <div class="bg5">배경 이미지 사이즈 : cover</div>
         <div class="bg6">배경 이미지 사이즈 : 100% 100%</div>
     </div>
+
+
 </body>
 
 </html>

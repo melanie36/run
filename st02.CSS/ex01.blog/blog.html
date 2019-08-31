@@ -1,9 +1,155 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>HTML5 Basic Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e6e6e6;
+            font-family: "맑은고딕";
+        }
+
+        #content {
+            clear: both;
+        }
+
+        div#page-wrapper {
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            background-color: white;
+            border-radius: 10px;
+            width: 960px;
+            height: 1200px;
+        }
+
+        hgroup {
+            padding: 60px;
+        }
+
+        .master-description {
+            font-weight: normal;
+            font-size: medium;
+        }
+
+        ul.outer-menu>.outer-menu-item {
+            float: left;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        nav {
+            border: 1px solid black;
+            border-right: none;
+            border-left: none;
+            height: 60px;
+            margin: 20px;
+        }
+
+        ul.outer-menu {
+            list-style: none;
+        }
+
+        li.inner-menu-item {
+            list-style: none;
+        }
+
+        div.aside-list {
+            float: right;
+            clear: both;
+            text-align: center;
+            width:200px;
+            padding: 20px;
+        }
+
+        #main-aside {
+            width: 200px;
+            float: right;
+            margin-right: 50px;
+        }
+
+        div.aside-list>ul {
+            list-style: none;
+        }
+
+        form {
+            float: right;
+            padding-top: 15px;
+            padding-right: 15px;
+        }
+
+        nav:::after {
+            clear: both;
+        }
+
+        input.input-search-submit {
+            float: left;
+            border: 2px solid lightgray;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            height: 30px;
+            width: 40px;
+        }
+
+
+
+        input.input-search {
+            border: 2px solid lightgray;
+            float: left;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-right: 0;
+            height: 26px;
+            width: 120px;
+
+        }
+
+        .article-body {
+            padding: 20px;
+        }
+
+        .article-header {
+            margin: 10px;
+        }
+
+        .article-title {
+            padding: 10px;
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        .article-date {
+            padding: 10px;
+        }
+
+
+        #main-section {
+            width: 710px;
+            float: left;
+        }
+
+        hr {
+            clear: both;
+            margin: 0 20px;
+        }
+
+        footer>a{
+            float: left;
+            padding: 20px;
+            color: blue;
+            text-decoration-line: none;
+        }
+        li>a{text-decoration-line: none; color: gray;}
+
+    </style>
 </head>
+
 <body>
     <div id="page-wrapper">
         <header id="main-header">
@@ -17,31 +163,14 @@
                 <ul class="outer-menu">
                     <li class="outer-menu-item">
                         <span class="menu-title">HTML5</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
+                  
                     </li>
                     <li class="outer-menu-item">
                         <span class="menu-title">CSS3</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
                     </li>
                     <li class="outer-menu-item">
                         <span class="menu-title">JavaScript</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
+        
                     </li>
                 </ul>
             </div>
@@ -65,9 +194,24 @@
                         <img src="http://placehold.it/430x280" />
                         <br />
                         <br />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium vitae rhoncus lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien venenatis lorem vestibulum cursus pellentesque mi sodales. Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula vitae bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non dolor. Donec in vulputate tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus massa auctor vitae. Integer non massa sit amet lacus accumsan blandit. Vivamus fermentum tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus posuere commodo. In hac habitasse platea dictumst.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem
+                            pretium vitae rhoncus lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin
+                            commodo. Nunc sagittis sapien venenatis lorem vestibulum cursus pellentesque mi sodales.
+                            Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat
+                            rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula
+                            vitae bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non
+                            dolor. Donec in vulputate tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit
+                            augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus
+                            massa auctor vitae. Integer non massa sit amet lacus accumsan blandit. Vivamus fermentum
+                            tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus
+                            posuere commodo. In hac habitasse platea dictumst.</p>
                         <br />
-                        <p>Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna vehicula semper ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum justo tortor, malesuada non tincidunt quis, feugiat ut metus. Maecenas varius neque ut diam ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing non, vehicula ut magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor risus. Donec accumsan ante vel justo porttitor volutpat.</p>
+                        <p>Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed
+                            magna vehicula semper ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum
+                            justo tortor, malesuada non tincidunt quis, feugiat ut metus. Maecenas varius neque ut diam
+                            ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing non, vehicula ut
+                            magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor
+                            risus. Donec accumsan ante vel justo porttitor volutpat.</p>
                     </div>
                 </article>
             </section>
@@ -93,23 +237,11 @@
                 </div>
             </aside>
         </div>
+        <hr>
         <footer id="main-footer">
             <a href="#">Created By Team-HeXagon</a>
         </footer>
     </div>
 </body>
-</html>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.inner-menu').hide();
-
-        $('.outer-menu-item').mouseover(function () {
-            $(this).find('.inner-menu').show();
-        })
-        .mouseout( function () {
-            $(this).find('.inner-menu').hide();
-        });
-    });
-</script>
+</html>
