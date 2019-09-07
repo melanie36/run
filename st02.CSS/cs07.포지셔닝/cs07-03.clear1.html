@@ -3,6 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>clear 1</title>
+
+    <style>
+    *{margin: 0;padding: 0;}
+    div.box1{background-color: darkgreen;width: 150px; height: 100px; display: inline-block;}
+    div.box2{background-color: darkkhaki;width: 150px; height: 100px; display: inline-block;}
+    div.box3{background-color: darkorange;width: 150px; height: 100px; display: inline-block;}
+
+    div::after{clear: both; display: block; content:"";}
+    
+    
+    
+    </style>
+
+
 </head>
 <body>
     <div id="clearboth">
@@ -11,4 +25,4 @@
     </div>
     <div class="box3">3</div>
 </body>
-</html>
+</html>

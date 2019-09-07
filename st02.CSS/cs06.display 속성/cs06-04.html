@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>display 속성</title>
+    <style>
+    *{margin:0;padding:0;}
+    li{ display: inline-block; width:100px; height:50px; text-align: center; padding: 20px 0 0 0;}
+    li.first,.first1{background-color: red;}
+    li.seconds,.seconds8{background-color:green;}
+    .first1{border-radius:10px 0 0 10px;}
+    .seconds8{border-radius:0 10px 10px 0;margin-left: -6px;}
+    li.seconds,.first{margin-left: -6px;}
+    
+    
+    </style>
 </head>
 <body>
     <ul>
-        <li>1번째</li>
-        <li>2번째</li>
-        <li>3번째</li>
-        <li>4번째</li>
-        <li>5번째</li>
-        <li>6번째</li>
-        <li>7번째</li>
-        <li>8번째</li>
+        <li class="first1">1번째</li>
+        <li class="seconds">2번째</li>
+        <li class="first">3번째</li>
+        <li class="seconds">4번째</li>
+        <li class="first">5번째</li>
+        <li class="seconds">6번째</li>
+        <li class="first">7번째</li>
+        <li class="seconds8">8번째</li>
     </ul>
 </body>
 </html>

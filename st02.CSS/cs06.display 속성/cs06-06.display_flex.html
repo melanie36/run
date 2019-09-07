@@ -2,7 +2,17 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">    
-	<title>display flex</title>
+    <title>display flex</title>
+    <style>
+    *{margin:0;padding: 0;}
+    html,body{height: 100%;}
+    body {display: flex; flex-direction : column;}
+    body>div{flex-shrink: 0;}
+    div.div1{background-color: yellow;}
+    div.div2{background-color: orange; flex-grow: 1;}
+    
+    
+    </style>
 </head>
 
 <body>
@@ -19,4 +29,4 @@
     </div>
 </body>
 
-</html>
+</html>

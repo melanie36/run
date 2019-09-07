@@ -1,13 +1,50 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>박스모델</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div.box1 {
+            background-color: cyan;
+        }
+
+        div.box2 {
+            background-color: darkblue;
+        }
+
+        div.box3 {
+            background-color: darkgoldenrod;
+        }
+
+        div.box4 {
+            background-color: darkgreen;
+        }
+
+
+        div {
+            width: 150px;
+            height: 100px;
+        }
+
+        div::after {
+            clear: both;
+            display: block;
+            content: ""
+        }
+    </style>
 </head>
+
 <body>
     <div class="box1">박스1</div>
     <div class="box2">박스2</div>
     <div class="box3">박스3</div>
     <div class="box4">박스4</div>
 </body>
+
 </html>
