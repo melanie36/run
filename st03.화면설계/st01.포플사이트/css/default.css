@@ -11,3 +11,89 @@ label { cursor:pointer; }
 .blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
 i,em,address { font-style:normal; font-weight:normal; }
 
+#wrap {
+    width: 960px;
+    margin: auto;
+}
+
+header {
+    margin: 30px 0;
+}
+
+div#header-left {
+    float: left;
+}
+
+div#header-right {
+    float: right;
+}
+
+header::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+nav {
+    background-color: white;
+    border: 1px solid black;
+}
+
+nav ul li {
+    float: left;
+    color: black;
+    margin: 25px;
+}
+
+nav::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.home,
+.login,
+.joinus,
+.submit {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.home,
+.login,
+.joinus {
+    width: 80px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+
+}
+
+.submit {
+    width: 200px;
+    height: 20px;
+}
+
+nav>ul>li,
+h2,
+#img1,
+.home,
+.login,
+.joinus,
+.submit {
+    display: inline-block;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#footer-right {
+    float: right;
+}
+#footer-right>ul>li{text-align: right;padding: 10px;}
+#footer-left{margin:15px;float: left;}
+footer{margin-top: 100px;border:1px solid black;height: 150px;}
+
